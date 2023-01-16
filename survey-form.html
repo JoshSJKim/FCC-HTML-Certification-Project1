@@ -26,5 +26,31 @@
         Also, I'd like to get to know fellow artists around the world. Please respond to some of the questions below and Let's Connect!</p>
       </div>
       <hr>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name, or Nickname <input type="text" id="name" placeholder="e.g. Joon.K" required></label>
+        <label id="email-label" for="email">Email <input type="email" id="email" placeholder="e.g. seonjoon.josh.kim@gmail.com" required></label>
+        <label id="number-label" for="number">How many years have you been involved in the arts? <input type="number" id="number" min="0" max="99" placeholder="e.g. 2"></label>
+        <label id="url" for="website">Art related social media account or a website? <input type="url" id="website" placeholder="e.g. www.instagram.com/sjkim_sketches"></label>
+        <label for="dropdown">Are you a professional artist or a hobbyist?</label>
+          <select id="dropdown">
+            <option value="">Select one</option>
+            <option value="professional">Professional</option>
+            <option value="hobbyist">Hobbyist</option>
+          </select>
+        <p class="form">Which of the following do you prefer the most?</p>
+          <label for="urban"><input class="inline" type="radio" name="live-or-not" value="urban" id="urban"> Urban sketching / Plein-air</label>
+          <label for="reference"><input class="inline" type="radio" name="live-or-not" value="reference" id="reference"> Based on reference photo</label>
+          <label for="imagination"><input class="inline" type="radio" name="live-or-not" value="imagination" id="imagination"> Based on imagination</label>
+        <p class="form">What is your "Go-to" from the following? Select all that apply.</p>
+          <label for="pencil"><input class="inline" type="checkbox" value="pencil" id="pencil"> Pencil (colored, graphite)</label>
+          <label for="pen"><input class="inline" type="checkbox" value="pen" id="pen"> Pen (ballpoint, fineliner, fountain)</label>
+          <label for="charcoal"><input class="inline" type="checkbox" value="charcoal" id="charcoal"> Charcoal, conte, oil-pastel</label>
+          <label for="watercolor"><input class="inline" type="checkbox" value="watercolor" id="watercolor"> Watercolor</label>
+          <label for="oil-paint"><input class="inline" type="checkbox" value="oil-paint" id="oil-paint"> Oil paint, acrylic, gouache</label>
+        <p class="form">Any comments or anything you would like to add?</p>
+          <textarea rows="6" cols="30"></textarea>
+        <button id="submit">Submit</button>
+      </form>
+      <hr>
 </body>
 </html>
